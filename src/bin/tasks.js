@@ -5,6 +5,9 @@ import resolveTask226 from '../tasks/lisovskyi/Lisovskyi226';
 import resolveTask559 from '../tasks/lisovskyi/Lisovskyi559';
 import task332 from '../tasks/shniak/332';
 import task88CD from '../tasks/shniak/88CD';
+import resolveTask86a from '../tasks/karanevych/86a';
+import resolveTask86b from '../tasks/karanevych/86b';
+import resolveTask330 from '../tasks/karanevych/330';
 
 const chooseTheTask = () => {
   console.log('Welcome to the Lv-398.NodeJS Algorithm Task Manager!');
@@ -24,6 +27,15 @@ const chooseTheTask = () => {
       break;
     case 'Shniak_332':
       task332();
+      break;
+    case 'Karanevych_86a':
+      resolveTask86a();
+      break;
+    case 'Karanevych_86b':
+      resolveTask86b();
+      break;
+    case 'Karanevych_330':
+      resolveTask330();
       break;
     default:
       console.log('Invalid task. Please try again.');
