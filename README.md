@@ -4,4 +4,4 @@ Tasks completed by Lv.398-NodeJS group. To start a task, please follow the steps
 
 1. Download this software with `npm install -g tasks-softserve-academy` printed in the terminal.
 2. Start the program by typing `tasks-softserve-academy`.
-3. You will be prompted to choose a task. Choose a task following this formula: `[student's surname]_[no. of task].
+3. You will be prompted to choose a task. Choose a task following this formula: `[student's surname]_[no. of task]`.
