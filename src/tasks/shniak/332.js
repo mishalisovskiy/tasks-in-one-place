@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const task332 = () => {
-  console.log("------------------------\nTask 332 - Lagrange’s Four Square Theorem: find four non negative integers, sum of squares of which gives n.\n------------------------");
+  console.log('------------------------\nTask 332 - Lagrange’s Four Square Theorem: find four non negative integers, sum of squares of which gives n.\n------------------------');
   const n = Number(readlineSync.question('Please enter n: '));
   const lagrangeNumbers = () => {
     const limit = Math.sqrt(n);
@@ -18,8 +18,8 @@ const task332 = () => {
       }
     }
     return answer;
-  }
+  };
   console.log(lagrangeNumbers());
-}
+};
 
 export default task332;
