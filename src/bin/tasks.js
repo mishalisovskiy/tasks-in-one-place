@@ -11,6 +11,9 @@ import resolveTask330 from '../tasks/karanevych/330';
 import resolveTaskLarionov88a from '../tasks/larionovv/Larionov88a';
 import resolveTaskLarionov88b from '../tasks/larionovv/Larionov88b';
 import resolveTaskLarionov322 from '../tasks/larionovv/Larionov322';
+import resolveTask109 from '../tasks/tkachuk/Tkachuk109';
+import resolveTask331a from '../tasks/tkachuk/Tkachuk331a';
+import resolveTask331b from '../tasks/tkachuk/Tkachuk331b';
 
 const chooseTheTask = () => {
   console.log('Welcome to the Lv-398.NodeJS Algorithm Task Manager!');
@@ -48,6 +51,15 @@ const chooseTheTask = () => {
       break;
     case 'Larionov_322':
       resolveTaskLarionov322();
+      break;
+    case 'Tkachuk_109':
+      resolveTask109();
+      break;
+    case 'Tkachuk_331a':
+      resolveTask331a();
+      break;
+    case 'Tkachuk_331b':
+      resolveTask331b();
       break;
     default:
       console.log('Invalid task. Please try again.');
