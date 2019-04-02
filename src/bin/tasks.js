@@ -17,6 +17,12 @@ const chooseTheTask = () => {
     case 'Lisovskyi_559':
       resolveTask559();
       break;
+    case 'Shniak_88CD':
+      task88CD();
+      break;
+    case 'Shniak_332':
+      task332();
+      break;
     default:
       console.log('Invalid task. Please try again.');
   }

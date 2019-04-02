@@ -4,3 +4,4 @@ dist
 flow-typed
 .tern-port
 .idea
+.DS_Store
