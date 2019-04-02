@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const resolveTask226 = () => {
-  console.log('Find the common multiples of n and m \nwhich is less than their product.');
+  console.log('Find the common multiples of n and m \nwhich are less than their product.');
   const m = Number(readlineSync.question('Please choose m: '));
   const n = Number(readlineSync.question('Please choose n: '));
 
