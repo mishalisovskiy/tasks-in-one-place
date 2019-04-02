@@ -1,5 +1,5 @@
 {
-  "name": "tasks-in-one-place",
+  "name": "lv398.nodejs-tasks",
   "version": "1.0.0",
   "description": "SoftServe Project No.1",
   "scripts": {
@@ -17,7 +17,7 @@
   "files": [
     "dist"
   ],
-  "author": "miahslisovskiy@gmail.com",
+  "author": "mishalisovskiy@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
