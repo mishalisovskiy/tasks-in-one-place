@@ -3,6 +3,8 @@ import readlineSync from 'readline-sync';
 import resolveTask87 from '../tasks/lisovskyi/Lisovskyi87';
 import resolveTask226 from '../tasks/lisovskyi/Lisovskyi226';
 import resolveTask559 from '../tasks/lisovskyi/Lisovskyi559';
+import task332 from '../tasks/shniak/332';
+import task88CD from '../tasks/shniak/88CD';
 
 const chooseTheTask = () => {
   console.log('Welcome to the Lv-398.NodeJS Algorithm Task Manager!');
