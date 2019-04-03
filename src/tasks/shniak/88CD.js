@@ -1,6 +1,6 @@
 import readlineSync from 'readline-sync';
 
-const task88CD = () => {
+const resolveTask88CD = () => {
   console.log("------------------------\nTask 88 (c and d) - Swap first and last element of a number (n) and add '1' on the beginning and the end.\n------------------------");
   const n = Number(readlineSync.question('Please enter n: '));
   const swap = () => {
@@ -22,4 +22,4 @@ const task88CD = () => {
   console.log(swap());
 };
 
-export default task88CD;
+export default resolveTask88CD;

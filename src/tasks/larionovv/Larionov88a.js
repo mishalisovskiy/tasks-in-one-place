@@ -7,7 +7,7 @@ const resolveTaskLarionov88a = () => {
     let result = 'No';
     num *= num;
     const str = num.toString();
-    for (let i = 0; i < str.length; i + 1) {
+    for (let i = 0; i < str.length; i += 1) {
       if (str[i] === '3') {
         result = 'Yes';
         break;

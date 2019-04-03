@@ -3,8 +3,8 @@ import readlineSync from 'readline-sync';
 import resolveTask87 from '../tasks/lisovskyi/Lisovskyi87';
 import resolveTask226 from '../tasks/lisovskyi/Lisovskyi226';
 import resolveTask559 from '../tasks/lisovskyi/Lisovskyi559';
-import task332 from '../tasks/shniak/332';
-import task88CD from '../tasks/shniak/88CD';
+import resolveTask332 from '../tasks/shniak/332';
+import resolveTask88CD from '../tasks/shniak/88CD';
 import resolveTask86a from '../tasks/karanevych/86a';
 import resolveTask86b from '../tasks/karanevych/86b';
 import resolveTask330 from '../tasks/karanevych/330';
@@ -19,46 +19,47 @@ const chooseTheTask = () => {
   console.log('Welcome to the Lv-398.NodeJS Algorithm Task Manager!');
   const taskChosen = readlineSync.question('Please choose the task: ');
   switch (taskChosen) {
-    case 'Lisovskyi_87':
+    case '87':
       resolveTask87();
       break;
-    case 'Lisovskyi_226':
+    case '226':
       resolveTask226();
       break;
-    case 'Lisovskyi_559':
+    case '559':
       resolveTask559();
       break;
-    case 'Shniak_88CD':
-      task88CD();
+    case '88CD':
+    case '88cd':
+      resolveTask88CD();
       break;
-    case 'Shniak_332':
-      task332();
+    case '332':
+      resolveTask332();
       break;
-    case 'Karanevych_86a':
+    case '86a':
       resolveTask86a();
       break;
-    case 'Karanevych_86b':
+    case '86b':
       resolveTask86b();
       break;
-    case 'Karanevych_330':
+    case '330':
       resolveTask330();
       break;
-    case 'Larionov_88a':
+    case '88a':
       resolveTaskLarionov88a();
       break;
-    case 'Larionov_88b':
+    case '88b':
       resolveTaskLarionov88b();
       break;
-    case 'Larionov_322':
+    case '322':
       resolveTaskLarionov322();
       break;
-    case 'Tkachuk_109':
+    case '109':
       resolveTask109();
       break;
-    case 'Tkachuk_331a':
+    case '331a':
       resolveTask331a();
       break;
-    case 'Tkachuk_331b':
+    case '331b':
       resolveTask331b();
       break;
     default:

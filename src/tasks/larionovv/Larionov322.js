@@ -7,8 +7,8 @@ const resolveTaskLarionov322 = () => {
     let sum = 0;
     let result = 0;
     let j;
-    for (j = 0; j < 10000; j + 1) {
-      for (let i = 1; i <= j; i + 1) {
+    for (j = 0; j < 10000; j += 1) {
+      for (let i = 1; i <= j; i += 1) {
         if (!(j % i)) {
           sum += i;
         }
