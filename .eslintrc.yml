@@ -1,7 +1,8 @@
 env:
   node: true
 
-extends: 'airbnb-base'
+extends: "airbnb-base"
 
 rules:
   no-console: 0
+  linebreak-style: 0
