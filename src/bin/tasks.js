@@ -17,10 +17,9 @@ import resolveTask331b from '../tasks/tkachuk/Tkachuk331b';
 import resolveTask107 from '../tasks/orudka/Rudka107';
 import resolveTask243a from '../tasks/orudka/Rudka243a';
 import resolveTask243b from '../tasks/orudka/Rudka243b';
-import resolveTask178b from '../tasks/manzhula/Manzhula178b';
-import resolveTask178v from '../tasks/manzhula/Manzhula178v';
-import resolveTask554 from '../tasks/manzhula/Manzhula554';
-
+import { resolveTask178b } from '../tasks/manzhula/Manzhula178b';
+import { resolveTask178v } from '../tasks/manzhula/Manzhula178v';
+import { resolveTask554 } from '../tasks/manzhula/Manzhula554';
 
 const chooseTheTask = () => {
   console.log('Welcome to the Lv-398.NodeJS Algorithm Task Manager!');

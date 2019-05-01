@@ -1,20 +1,19 @@
 import readlineSync from 'readline-sync';
 
-const resolveTask554 = () => {
-  console.log('Find all Піфагорові Трійки for all a <= b <= c <= n.');
+export const resolveTask554 = () => {
+  console.log('Find all Pythagorean triple for all a <= b <= c <= n.');
   const n = Number(readlineSync.question('Please choose n: '));
-
-  const findAll = () => {
-    for (let i = 1; i < n; i += 1) {
-      for (let j = 1; j < i; j += 1) {
-        const k = Math.sqrt(i * i + j * j);
-        if (k % 1 === 0) {
-          console.log(i, j, k);
-        }
-      }
-    }
-  };
-  findAll();
+  console.log(findAll(n));
 };
 
-export default resolveTask554;
+export const findAll = (n) => {
+  if (!n || isNaN(n) || n < 5) return 'Invalid input, enter a number greater than 5';
+  for (let i = 1; i < n; i += 1) {
+    for (let j = 1; j < i; j += 1) {
+      const k = Math.sqrt(i * i + j * j);
+      if (k % 1 === 0) {
+        return `${i}, ${j}, ${k}`;
+      }
+    }
+  }
+};
