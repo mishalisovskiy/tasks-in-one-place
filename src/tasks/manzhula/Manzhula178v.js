@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
 
 export const findCount = (n) => {
-  if (!n || Number.isNaN(n)) return 'Invalid input, enter a number';
+  // eslint-disable-next-line no-restricted-globals
+  if (!n || isNaN(n)) return 'Invalid input, enter a number';
   let count = 0;
   for (let i = 2; i * i <= n; i += 2) {
     count += 1;
