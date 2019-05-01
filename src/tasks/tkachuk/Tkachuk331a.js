@@ -15,10 +15,10 @@ export const findThree = (n) => {
     for (let y = 1; y <= sqrtN; y += 1) {
       for (let z = 1; z <= sqrtN; z += 1) {
         if (x * x + y * y + z * z === n) {
-          return `Yes, ${n} can be represented as n = x2 + y2 + z2`;
+          return true;
         }
       }
     }
   }
-  return `No, ${n} can't be represented as n = x2 + y2 + z2`;
+  return false;
 };
