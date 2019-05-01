@@ -1,15 +1,7 @@
 import readlineSync from 'readline-sync';
 
-export const resolveTask331a = () => {
-  console.log(
-    '---------------------\nTask 331a - Check if number can be represented as n = x2 + y2 + z2.\n---------------------',
-  );
-  const n = Number(readlineSync.question('Please enter n: '));
-  console.log(findThree(n));
-};
-
 export const findThree = (n) => {
-  if (!n || isNaN(n)) return 'Invalid input, enter a number';
+  if (!n || Number.isNaN(n)) return 'Invalid input, enter a number';
   const sqrtN = Math.round(Math.sqrt(n));
   for (let x = 1; x <= sqrtN; x += 1) {
     for (let y = 1; y <= sqrtN; y += 1) {
@@ -21,4 +13,12 @@ export const findThree = (n) => {
     }
   }
   return false;
+};
+
+export const resolveTask331a = () => {
+  console.log(
+    '---------------------\nTask 331a - Check if number can be represented as n = x2 + y2 + z2.\n---------------------',
+  );
+  const n = Number(readlineSync.question('Please enter n: '));
+  console.log(findThree(n));
 };
