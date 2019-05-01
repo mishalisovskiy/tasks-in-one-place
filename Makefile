@@ -3,7 +3,10 @@ install:
 
 start:
 	npx babel-node -- src/bin/tasks.js
-	
+
+test:
+	npm test
+
 publish:
 	npm publish
 
