@@ -1,12 +1,10 @@
-import readlineSync from 'readline-sync';
+import { enterNum, numberLength } from './utils';
 
 const resolveTask86a = () => {
   console.log('------------------------\nTask 86a - how many digits in number n.\n------------------------');
-  const n = Number(readlineSync.question('Please enter n: '));
-  function numberLength() {
-    return n.toString().split('').length;
-  }
-  console.log(numberLength());
+  const n = enterNum();
+  console.log(numberLength(n));
+  return numberLength(n);
 };
 
 export default resolveTask86a;
