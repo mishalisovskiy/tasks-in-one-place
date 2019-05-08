@@ -15,7 +15,9 @@ export const findCommonMultiples = (num1, num2) => {
 };
 
 const resolveTask226 = () => {
-  console.log('Find the common multiples of n and m \nwhich are less than their product.');
+  console.log(
+    '---------------------\nFind the common multiples of n and m \nwhich are less than their product.',
+  );
   const m = getMeANumber('m');
   const n = getMeANumber('n');
 

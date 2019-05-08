@@ -6,7 +6,9 @@ export const findSum = (num1, num2) => {
 };
 
 const resolveTask87 = () => {
-  console.log('Find the sum of the last n digits of m.');
+  console.log(
+    '---------------------\nFind the sum of the last n digits of m.',
+  );
 
   const m = getMeANumber('m');
   const n = getMeANumber('n');

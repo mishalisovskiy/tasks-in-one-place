@@ -14,7 +14,9 @@ export const findMersenneNums = (num) => {
 };
 
 const resolveTask559 = () => {
-  console.log('Find Mersenne numbers less than n');
+  console.log(
+    '---------------------\nFind Mersenne numbers less than n',
+  );
   const n = getMeANumber('n');
 
   console.log(findMersenneNums(n));
