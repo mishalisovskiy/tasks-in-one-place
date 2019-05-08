@@ -5,7 +5,7 @@ export const enterNumber = () => {
   return n;
 };
 
-export const findNamInRecord = (n) => {
+export const findNumInRecord = (n) => {
   let result = '';
   const str = String(n * n);
   for (let i = 0; i < str.length; i += 1) {
