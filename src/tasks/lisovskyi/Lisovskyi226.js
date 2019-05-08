@@ -1,6 +1,6 @@
 import { getMeANumber } from './utils';
 
-const findCommonMultiples = (num1, num2) => {
+export const findCommonMultiples = (num1, num2) => {
   const limit = num1 * num2;
   const commonMultiples = [];
   let i = num1 > num2 ? num1 : num2;

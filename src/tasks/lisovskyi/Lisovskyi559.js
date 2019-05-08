@@ -1,6 +1,6 @@
 import { getMeANumber, isPrime } from './utils';
 
-const findMersenneNums = (num) => {
+export const findMersenneNums = (num) => {
   const arrayOfMersenneNums = [];
   const mersenneCalculation = m => (2 ** m) - 1;
 

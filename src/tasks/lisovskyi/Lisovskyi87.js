@@ -1,6 +1,6 @@
 import { getMeANumber } from './utils';
 
-const findSum = (num1, num2) => {
+export const findSum = (num1, num2) => {
   const requiredOperands = String(num1).split('').slice(-num2).map(Number);
   return requiredOperands.reduce((acc, element) => acc + element);
 };
