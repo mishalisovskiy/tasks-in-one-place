@@ -1,25 +1,25 @@
-import readlineSync from 'readline-sync';
+import { getMeANumber } from './utils';
+
+const findCommonMultiples = (num1, num2) => {
+  const limit = num1 * num2;
+  const commonMultiples = [];
+  let i = num1 > num2 ? num1 : num2;
+
+  for (; i < limit; i += 1) {
+    if (i % num1 === 0 && i % num2 === 0) {
+      commonMultiples.push(i);
+    }
+  }
+
+  return commonMultiples;
+};
 
 const resolveTask226 = () => {
   console.log('Find the common multiples of n and m \nwhich are less than their product.');
-  const m = Number(readlineSync.question('Please choose m: '));
-  const n = Number(readlineSync.question('Please choose n: '));
+  const m = getMeANumber('m');
+  const n = getMeANumber('n');
 
-  const findCommonMultiples = () => {
-    const limit = m * n;
-    const commonMultiples = [];
-    let i = m > n ? m : n;
-
-    for (; i < limit; i += 1) {
-      if (i % m === 0 && i % n === 0) {
-        commonMultiples.push(i);
-      }
-    }
-
-    return commonMultiples;
-  };
-
-  console.log(findCommonMultiples());
+  console.log(findCommonMultiples(m, n));
 };
 
 export default resolveTask226;
