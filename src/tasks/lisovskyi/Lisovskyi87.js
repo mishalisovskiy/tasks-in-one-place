@@ -1,15 +1,17 @@
-import readlineSync from 'readline-sync';
+import { getMeANumber } from './utils';
+
+const findSum = (num1, num2) => {
+  const requiredOperands = String(num1).split('').slice(-num2).map(Number);
+  return requiredOperands.reduce((acc, element) => acc + element);
+};
 
 const resolveTask87 = () => {
   console.log('Find the sum of the last n digits of m.');
-  const m = Number(readlineSync.question('Please choose m: '));
-  const n = Number(readlineSync.question('Please choose n: '));
 
-  const findSum = () => {
-    const requiredOperands = String(m).split('').slice(-n).map(Number);
-    return requiredOperands.reduce((acc, element) => acc + element);
-  };
-  console.log(findSum());
+  const m = getMeANumber('m');
+  const n = getMeANumber('n');
+
+  console.log(findSum(m, n));
 };
 
 export default resolveTask87;
