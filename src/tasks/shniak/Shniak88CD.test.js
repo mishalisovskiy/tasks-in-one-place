@@ -26,11 +26,6 @@ describe('testing swap function', () => {
     expect(result).toEqual('1srrga1');
   });
 
-  // it('n= 59484838274', () => {
-  //   const result = swap(59484838274);
-  //   expect(result).toEqual('1494848382751');
-  // });
-
   it('n= 1234f56789', () => {
     const result = swap('1234f56789');
     expect(result).toEqual('19234f567811');
