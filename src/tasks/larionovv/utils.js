@@ -2,10 +2,14 @@ import readlineSync from 'readline-sync';
 
 export const enterNumber = () => {
   const n = Number(readlineSync.question('Please enter n: '));
+  if (!Number(n)) {
+    console.log('Invalid number');
+    enterNumber();
+  }
   return n;
 };
 
-export const findNamInRecord = (n) => {
+export const findNumInRecord = (n) => {
   let result = '';
   const str = String(n * n);
   for (let i = 0; i < str.length; i += 1) {
