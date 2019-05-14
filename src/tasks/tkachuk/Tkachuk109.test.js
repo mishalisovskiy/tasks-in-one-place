@@ -4,9 +4,9 @@ describe('Function should return correct values', () => {
   test('-1', () => {
     expect(findSmallestRaisedToPower(-1)).toBe(1);
   });
-  // test('0', () => {
-  //   expect(findSmallestRaisedToPower(0)).toBe(1); //'Invalid input, enter a number'
-  // });
+  test('0', () => {
+    expect(findSmallestRaisedToPower(0)).toBe(1);
+  });
   test('10', () => {
     expect(findSmallestRaisedToPower(10)).toBe(16);
   });
