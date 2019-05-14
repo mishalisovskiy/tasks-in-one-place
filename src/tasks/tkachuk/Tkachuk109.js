@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export const findSmallestRaisedToPower = (n) => {
-  if (!n || isNaN(n)) return 'Invalid input, enter a number';
+  if (typeof n !== 'number') return 'Invalid input, enter a number';
   let result = 1;
   while (result <= n) {
     result *= 2;
