@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 export const findThree = (n) => {
-  if (typeof n !== 'number') return 'Invalid input, enter a number';
+  if (typeof n !== 'number' || isNaN(n)) return 'Invalid input, enter a number';
   const sqrtN = Math.round(Math.sqrt(n));
   for (let x = 1; x <= sqrtN; x += 1) {
     for (let y = 1; y <= sqrtN; y += 1) {
