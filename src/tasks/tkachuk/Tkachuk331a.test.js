@@ -4,9 +4,9 @@ describe('Function findThree should return correct values', () => {
   test('-1', () => {
     expect(findThree(-1)).toEqual(false);
   });
-  // test('0', () => {
-  //   expect(findThree(0)).toEqual(false); //'Invalid input, enter a number'
-  // });
+  test('0', () => {
+    expect(findThree(0)).toEqual(false);
+  });
   test('1', () => {
     expect(findThree(1)).toEqual(false);
   });

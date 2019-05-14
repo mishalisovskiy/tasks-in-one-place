@@ -4,9 +4,9 @@ describe('Function findAllThree should return correct values', () => {
   test('-1', () => {
     expect(findAllThree(-1)).toEqual('Cant be represented as n = x2 + y2 + z2');
   });
-  // test('0', () => {
-  //   expect(findAllThree(0)).toEqual('Cant be represented as n = x2 + y2 + z2');  //Invalid input, enter a number
-  // });
+  test('0', () => {
+    expect(findAllThree(0)).toEqual('Cant be represented as n = x2 + y2 + z2');
+  });
   test('1', () => {
     expect(findAllThree(1)).toEqual('Cant be represented as n = x2 + y2 + z2');
   });
