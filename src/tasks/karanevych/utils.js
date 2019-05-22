@@ -5,11 +5,21 @@ const enterNum = () => {
   return n;
 };
 
-const numberLength = n => n.toString().split('').length;
+const numberLength = (n) => {
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(Number(n))) {
+    return 'Invalid input, enter a number';
+  }
+  return String(n).split('').length;
+};
 
 const findSum = (n) => {
-  const sum = n.toString().split('').reduce((acc, cur) => +acc + +cur);
-  return sum;
+  const sum = String(n).split('').reduce((acc, cur) => +acc + +cur);
+  // eslint-disable-next-line no-restricted-globals
+  if (isNaN(sum)) {
+    return 'Invalid input, enter a number';
+  }
+  return Number(sum);
 };
 
 const perfectNum = (n) => {
