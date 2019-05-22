@@ -11,12 +11,12 @@ describe('Testing 86a', () => {
   });
 
   it('should return warning if no value is passed', () => {
-    const result = numberLength();
+    const result = findSum();
     expect(result).toBe('Invalid input, enter a number');
   });
 
   it('should return warning if passed value is not a number', () => {
-    const result = numberLength('aaaabbbbccccdddd');
+    const result = findSum('aaaabbbbccccdddd');
     expect(result).toBe('Invalid input, enter a number');
   });
 });
