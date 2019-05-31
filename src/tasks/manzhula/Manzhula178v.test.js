@@ -1,6 +1,6 @@
 import { findCount } from './Manzhula178v';
 
-describe('greet', () => {
+describe('Testing Manzhula178v', () => {
   it('should return valid calculation', () => {
     const result = findCount(100);
     expect(result).toBe(5);

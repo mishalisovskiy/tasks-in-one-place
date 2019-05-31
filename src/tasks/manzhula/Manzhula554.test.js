@@ -1,9 +1,9 @@
 import { findAll } from './Manzhula554';
 
-describe('greet', () => {
+describe('Testing Manzhula554', () => {
   it('should return valid calculation', () => {
     const result = findAll(5);
-    expect(result).toBe('4, 3, 5');
+    expect(result).toEqual(['4, 3, 5']);
   });
 
   it('should return warning if no value is passed', () => {
