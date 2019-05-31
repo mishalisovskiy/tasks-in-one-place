@@ -1,9 +1,6 @@
 import readlineSync from 'readline-sync';
 
-export const enterNumber = () => {
-  const n = Number(readlineSync.question('Please enter n: '));
-  return n;
-};
+export const enterNumber = () => Number(readlineSync.question('Please enter n: '));
 
 export const findNumInRecord = (n) => {
   let result = '';
